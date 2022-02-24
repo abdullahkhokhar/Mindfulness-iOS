@@ -23,10 +23,10 @@
                                 <rect key="frame" x="20" y="44" width="374" height="818"/>
                                 <subviews>
                                     <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="-45" translatesAutoresizingMaskIntoConstraints="NO" id="Rje-mX-gIG">
-                                        <rect key="frame" x="0.0" y="0.0" width="374" height="174.5"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="374" height="154"/>
                                         <subviews>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Good Morning" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="XMz-3y-NcG">
-                                                <rect key="frame" x="0.0" y="0.0" width="374" height="170"/>
+                                                <rect key="frame" x="0.0" y="0.0" width="374" height="149.5"/>
                                                 <constraints>
                                                     <constraint firstAttribute="height" constant="170" id="k37-Kp-Baq"/>
                                                 </constraints>
@@ -35,7 +35,7 @@
                                                 <nil key="highlightedColor"/>
                                             </label>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Choose what makes you feel mindful today." textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="9e2-sN-WnK" userLabel="SubHeading">
-                                                <rect key="frame" x="0.0" y="125" width="374" height="49.5"/>
+                                                <rect key="frame" x="0.0" y="104.5" width="374" height="49.5"/>
                                                 <constraints>
                                                     <constraint firstAttribute="height" constant="49.5" id="fcr-wz-CWc"/>
                                                 </constraints>
@@ -46,22 +46,22 @@
                                         </subviews>
                                     </stackView>
                                     <stackView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="r9g-Dp-9qE" userLabel="MiddleView">
-                                        <rect key="frame" x="0.0" y="176.5" width="374" height="510"/>
+                                        <rect key="frame" x="0.0" y="156" width="374" height="510"/>
                                         <constraints>
                                             <constraint firstAttribute="height" constant="510" id="Ckk-Kl-mcl"/>
                                         </constraints>
                                     </stackView>
                                     <stackView opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="300" verticalHuggingPriority="300" axis="vertical" distribution="equalCentering" translatesAutoresizingMaskIntoConstraints="NO" id="QdQ-bM-vo2" userLabel="BottomView">
-                                        <rect key="frame" x="0.0" y="176.5" width="374" height="641.5"/>
+                                        <rect key="frame" x="0.0" y="668" width="374" height="150"/>
                                         <subviews>
-                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Mindful Selection" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="7O5-f6-5Af">
-                                                <rect key="frame" x="0.0" y="0.0" width="374" height="30.5"/>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Mindful Selection" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="7O5-f6-5Af">
+                                                <rect key="frame" x="0.0" y="0.0" width="374" height="21"/>
                                                 <fontDescription key="fontDescription" name="Avenir-Black" family="Avenir" pointSize="22"/>
                                                 <nil key="textColor"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
                                             <stackView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="xbx-ui-trv">
-                                                <rect key="frame" x="0.0" y="512.5" width="374" height="129"/>
+                                                <rect key="frame" x="0.0" y="21" width="374" height="129"/>
                                                 <subviews>
                                                     <button opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="200" verticalHuggingPriority="200" horizontalCompressionResistancePriority="1" contentHorizontalAlignment="fill" contentVerticalAlignment="fill" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="IGv-0q-T8W">
                                                         <rect key="frame" x="0.0" y="0.0" width="124.5" height="129"/>
@@ -85,6 +85,9 @@
                                                 </subviews>
                                             </stackView>
                                         </subviews>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="150" id="1BH-nN-aya"/>
+                                        </constraints>
                                     </stackView>
                                 </subviews>
                             </stackView>

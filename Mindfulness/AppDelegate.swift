@@ -2,16 +2,13 @@
 //  AppDelegate.swift
 //  Mindfulness
 //
-//  Created by Abdullah Khokhar on 2022-02-14.
-// testing
+//  Created by Abdullah Khokhar on 2022-02-14 & Rahul Jasani on 2022-02-02-23
 
 import UIKit
 import Firebase
 
 @main
 class AppDelegate: UIResponder, UIApplicationDelegate {
-
-
 
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
         // Override point for customization after application launch.
