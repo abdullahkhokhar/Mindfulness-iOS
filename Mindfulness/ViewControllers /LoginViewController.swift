@@ -34,10 +34,19 @@ class LoginViewController: UIViewController {
         
         Auth.auth().signIn(withEmail: email, password: password) {(result, error) in
             
-            if error != nil {
-                // could not sign in
-                self.errorLabel.text = error!.localizedDescription
-                self.errorLabel.alpha = 1
+            if error != nil, let error = error as NSError? {
+                
+                if let errorCode = AuthErrorCode(rawValue: error.code) {
+                    switch errorCode {
+                    case .wrongPassword:
+                        self.showError("The password entered is incorrect")
+                    case .userNotFound:
+                        self.showError("This email does not exist")
+                    default:
+                        // there was an error of some sort
+                        self.showError("Error signing in user")
+                    }
+                }
             }
             else {
                 let homeViewController = self.storyboard?.instantiateViewController(withIdentifier: Constants.Storyboard.homeViewController) as? ViewController

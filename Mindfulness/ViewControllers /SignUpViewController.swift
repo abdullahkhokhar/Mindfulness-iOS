@@ -62,10 +62,19 @@ class SignUpViewController: UIViewController {
             // create the user
             // transition to the home screen
             Auth.auth().createUser(withEmail: email, password: password) {( result, err) in
-                if err != nil {
+                if err != nil, let err = err as NSError? {
                     
-                    // there was an error of some sort
-                    self.showError("Error creating user")
+                    if let errorCode = AuthErrorCode(rawValue: err.code) {
+                        switch errorCode {
+                        case .invalidEmail:
+                            self.showError("The email entered was invalid")
+                        case .emailAlreadyInUse:
+                            self.showError("This email is already in use")
+                        default:
+                            // there was an error of some sort
+                            self.showError("Error creating user")
+                        }
+                    }
                 }
                 else {
                     // we need to transition into the home screen
