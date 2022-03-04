@@ -12,13 +12,10 @@ import Firebase
 class SignUpViewController: UIViewController {
 
     @IBOutlet weak var nameTextField: UITextField!
-    
-    
+
     @IBOutlet weak var emailTextField: UITextField!
     
-    
     @IBOutlet weak var passwordTextField: UITextField!
-    
     
     @IBOutlet weak var signUpButton: UIButton!
     
@@ -66,6 +63,8 @@ class SignUpViewController: UIViewController {
                     
                     if let errorCode = AuthErrorCode(rawValue: err.code) {
                         switch errorCode {
+                        case .weakPassword:
+                            self.showError("The password entered is too weak")
                         case .invalidEmail:
                             self.showError("The email entered was invalid")
                         case .emailAlreadyInUse:
@@ -77,6 +76,16 @@ class SignUpViewController: UIViewController {
                     }
                 }
                 else {
+                    let db = Firestore.firestore()
+                    
+                    db.collection("users").document(result!.user.uid).setData(["name":name, "email":email, "uid": result!.user.uid]) { (error) in
+                        
+                        if error != nil {
+                                self.showError("Error saving user data")
+                        }
+                    }
+                    
+                    
                     // we need to transition into the home screen
                     self.transitionToHome()
                     

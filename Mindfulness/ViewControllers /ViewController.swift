@@ -53,6 +53,28 @@ class ViewController: UIViewController, iCarouselDataSource {
         
         return view
     }
-
+    
+    @IBOutlet weak var situationsButton: UIButton!
+    @IBOutlet weak var environmentsButton: UIButton!
+    @IBOutlet weak var dailyButton: UIButton!
+    
+    @IBAction func situationsButtonClicked(_ sender: Any) {
+        situationsButton.setImage(UIImage(named: "selected-situations.png"), for: .normal)
+        environmentsButton.setImage(UIImage(named: "environment-1.png"), for: .normal)
+        dailyButton.setImage(UIImage(named: "daily=1.png"), for: .normal)
+        
+    }
+    
+    @IBAction func environmentsButtonClicked(_ sender: Any) {
+        situationsButton.setImage(UIImage(named: "unselected-situations.png"), for: .normal)
+        environmentsButton.setImage(UIImage(named: "selected-environment.png"), for: .normal)
+        dailyButton.setImage(UIImage(named: "daily=1.png"), for: .normal)
+    }
+    
+    @IBAction func dailyButtonClicked(_ sender: Any) {
+        situationsButton.setImage(UIImage(named: "unselected-situations.png"), for: .normal)
+        environmentsButton.setImage(UIImage(named: "environment-1.png"), for: .normal)
+        dailyButton.setImage(UIImage(named: "selected-daily.png"), for: .normal)
+    }
 }
 

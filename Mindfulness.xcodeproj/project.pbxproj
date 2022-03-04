@@ -26,6 +26,7 @@
 		B410CCCC27C6853800A28D8C /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = B410CCCB27C6853800A28D8C /* GoogleService-Info.plist */; };
 		B410CD0B27C6D13600A28D8C /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B410CD0A27C6D13600A28D8C /* LoginViewController.swift */; };
 		B410CD0E27C6D1A000A28D8C /* Login.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B410CD0D27C6D1A000A28D8C /* Login.storyboard */; };
+		B43E129127D06EB6008ACD13 /* YoutubeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B43E129027D06EB6008ACD13 /* YoutubeViewController.swift */; };
 		B48774DE27C6E99200E821C4 /* SignUpViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B48774DD27C6E99200E821C4 /* SignUpViewController.swift */; };
 		B48774E027C6ED7300E821C4 /* HomePageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B48774DF27C6ED7300E821C4 /* HomePageViewController.swift */; };
 		FAAC06F640D1F5931206912F /* Pods_Mindfulness.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 940CEBE6EC1F063C136726A7 /* Pods_Mindfulness.framework */; };
@@ -46,6 +47,7 @@
 		B410CCCB27C6853800A28D8C /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = "GoogleService-Info.plist"; path = "../../../../../../../Downloads/GoogleService-Info.plist"; sourceTree = "<group>"; };
 		B410CD0A27C6D13600A28D8C /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
 		B410CD0D27C6D1A000A28D8C /* Login.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Login.storyboard; sourceTree = "<group>"; };
+		B43E129027D06EB6008ACD13 /* YoutubeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = YoutubeViewController.swift; sourceTree = "<group>"; };
 		B48774DD27C6E99200E821C4 /* SignUpViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpViewController.swift; sourceTree = "<group>"; };
 		B48774DF27C6ED7300E821C4 /* HomePageViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomePageViewController.swift; sourceTree = "<group>"; };
 		BC9A6D1DEB29D751A32DE4B1 /* Pods-Mindfulness.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Mindfulness.debug.xcconfig"; path = "Target Support Files/Pods-Mindfulness/Pods-Mindfulness.debug.xcconfig"; sourceTree = "<group>"; };
@@ -135,6 +137,7 @@
 		B410CD0C27C6D15E00A28D8C /* ViewControllers  */ = {
 			isa = PBXGroup;
 			children = (
+				B43E129027D06EB6008ACD13 /* YoutubeViewController.swift */,
 				B48774DF27C6ED7300E821C4 /* HomePageViewController.swift */,
 				5BF40C6E27BB20F5000354BC /* ViewController.swift */,
 				B48774DD27C6E99200E821C4 /* SignUpViewController.swift */,
@@ -284,6 +287,7 @@
 			files = (
 				5BF40C6F27BB20F5000354BC /* ViewController.swift in Sources */,
 				5BF40C6B27BB20F5000354BC /* AppDelegate.swift in Sources */,
+				B43E129127D06EB6008ACD13 /* YoutubeViewController.swift in Sources */,
 				B48774E027C6ED7300E821C4 /* HomePageViewController.swift in Sources */,
 				B410CD0B27C6D13600A28D8C /* LoginViewController.swift in Sources */,
 				B4017F6D27C70E1E0070A71B /* Constants.swift in Sources */,
