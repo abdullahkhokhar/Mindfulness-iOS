@@ -12,8 +12,10 @@ class YoutubeViewController: UIViewController {
     
     @IBOutlet weak var playerView: YTPlayerView!
     
+    var finalVideoIdOfVideo = ""
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-        playerView.load(withVideoId: "ZToicYcHIOU")
+        playerView.load(withVideoId: finalVideoIdOfVideo)
     }
 }
