@@ -78,14 +78,12 @@ class SignUpViewController: UIViewController {
                 else {
                     let db = Firestore.firestore()
                     
-                    db.collection("users").document(result!.user.uid).setData(["name":name, "email":email, "uid": result!.user.uid]) { (error) in
+                    db.collection("users").document(result!.user.uid).setData(["name":name, "email":email, "uid": result!.user.uid, "favourites": []]) { (error) in
                         
                         if error != nil {
                                 self.showError("Error saving user data")
                         }
                     }
-                    
-                    
                     // we need to transition into the home screen
                     self.transitionToHome()
                     
