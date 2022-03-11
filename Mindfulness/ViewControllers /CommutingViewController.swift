@@ -23,7 +23,6 @@ class CommutingViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        print(title1)
         self.titleOfPage.text = title1
         self.labelOfTitle.text = labelForTitle
         // Do any additional setup after loading the view.

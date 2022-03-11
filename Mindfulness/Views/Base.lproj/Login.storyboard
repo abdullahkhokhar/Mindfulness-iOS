@@ -298,13 +298,13 @@
                                 <rect key="frame" x="0.0" y="0.0" width="433" height="926"/>
                             </imageView>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="2" translatesAutoresizingMaskIntoConstraints="NO" id="UqA-Nf-JvN">
-                                <rect key="frame" x="20" y="44" width="388" height="848"/>
+                                <rect key="frame" x="20" y="44" width="388" height="818"/>
                                 <subviews>
                                     <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="-45" translatesAutoresizingMaskIntoConstraints="NO" id="irY-Bs-Kgf">
-                                        <rect key="frame" x="0.0" y="0.0" width="388" height="184"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="388" height="154"/>
                                         <subviews>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Good Morning" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="d3F-F3-bY5">
-                                                <rect key="frame" x="0.0" y="0.0" width="388" height="179.66666666666666"/>
+                                                <rect key="frame" x="0.0" y="0.0" width="388" height="149.66666666666666"/>
                                                 <constraints>
                                                     <constraint firstAttribute="height" constant="170" id="hwx-S2-jBo"/>
                                                 </constraints>
@@ -313,7 +313,7 @@
                                                 <nil key="highlightedColor"/>
                                             </label>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Choose what makes you feel mindful today." textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="3ds-vd-WuS" userLabel="SubHeading">
-                                                <rect key="frame" x="0.0" y="134.66666666666666" width="388" height="49.333333333333343"/>
+                                                <rect key="frame" x="0.0" y="104.66666666666664" width="388" height="49.333333333333329"/>
                                                 <constraints>
                                                     <constraint firstAttribute="height" constant="49.5" id="Dhy-lU-BUD"/>
                                                 </constraints>
@@ -324,13 +324,13 @@
                                         </subviews>
                                     </stackView>
                                     <stackView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="bm9-sD-g0w" userLabel="MiddleView">
-                                        <rect key="frame" x="0.0" y="186" width="388" height="510"/>
+                                        <rect key="frame" x="0.0" y="156" width="388" height="510"/>
                                         <constraints>
                                             <constraint firstAttribute="height" constant="510" id="xpW-tY-7Nh"/>
                                         </constraints>
                                     </stackView>
                                     <stackView opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="300" verticalHuggingPriority="300" axis="vertical" distribution="equalCentering" translatesAutoresizingMaskIntoConstraints="NO" id="JfN-BV-6Oz" userLabel="BottomView">
-                                        <rect key="frame" x="0.0" y="698" width="388" height="150"/>
+                                        <rect key="frame" x="0.0" y="668" width="388" height="150"/>
                                         <subviews>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Mindful Selection" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="uIF-rx-Xi5">
                                                 <rect key="frame" x="0.0" y="0.0" width="388" height="27"/>
@@ -425,30 +425,65 @@
                                 <rect key="frame" x="-62" y="-68" width="551" height="1008"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
-                            <view contentMode="scaleToFill" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Zo6-g5-Ydi" customClass="YTPlayerView">
-                                <rect key="frame" x="0.0" y="-29" width="428" height="300"/>
-                                <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="300" id="kV5-if-1ZM"/>
-                                </constraints>
-                            </view>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="30" translatesAutoresizingMaskIntoConstraints="NO" id="XVo-3d-uEI">
+                                <rect key="frame" x="10" y="50" width="408" height="422"/>
+                                <subviews>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Zo6-g5-Ydi" customClass="YTPlayerView">
+                                        <rect key="frame" x="0.0" y="0.0" width="408" height="300"/>
+                                        <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="300" id="kV5-if-1ZM"/>
+                                        </constraints>
+                                    </view>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="020-Lb-Wsr">
+                                        <rect key="frame" x="0.0" y="330" width="408" height="31"/>
+                                        <state key="normal" title="Button"/>
+                                        <buttonConfiguration key="configuration" style="plain" title="Like">
+                                            <backgroundConfiguration key="background">
+                                                <color key="backgroundColor" systemColor="systemGreenColor"/>
+                                                <color key="strokeColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                            </backgroundConfiguration>
+                                            <color key="baseForegroundColor" systemColor="systemBackgroundColor"/>
+                                        </buttonConfiguration>
+                                        <connections>
+                                            <action selector="likePressed:" destination="f6x-EG-Cgv" eventType="touchUpInside" id="hOc-E5-PGf"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="sN3-7c-pxZ">
+                                        <rect key="frame" x="0.0" y="391" width="408" height="31"/>
+                                        <state key="normal" title="Button"/>
+                                        <buttonConfiguration key="configuration" style="plain" title="Unlike">
+                                            <backgroundConfiguration key="background">
+                                                <color key="backgroundColor" systemColor="systemRedColor"/>
+                                                <color key="strokeColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                            </backgroundConfiguration>
+                                            <color key="baseForegroundColor" systemColor="systemBackgroundColor"/>
+                                        </buttonConfiguration>
+                                        <connections>
+                                            <action selector="unlikePressed:" destination="f6x-EG-Cgv" eventType="touchUpInside" id="Brk-hq-fHl"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                            </stackView>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="PmH-6T-WZZ"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
-                            <constraint firstItem="PmH-6T-WZZ" firstAttribute="trailing" secondItem="Zo6-g5-Ydi" secondAttribute="trailing" id="Hc4-Zp-t7O"/>
-                            <constraint firstItem="Zo6-g5-Ydi" firstAttribute="leading" secondItem="PmH-6T-WZZ" secondAttribute="leading" id="Jbb-8N-PZc"/>
-                            <constraint firstItem="Zo6-g5-Ydi" firstAttribute="top" secondItem="PmH-6T-WZZ" secondAttribute="top" id="PVN-K6-QyY"/>
+                            <constraint firstItem="XVo-3d-uEI" firstAttribute="top" secondItem="PmH-6T-WZZ" secondAttribute="top" constant="50" id="J65-5K-4gs"/>
+                            <constraint firstItem="XVo-3d-uEI" firstAttribute="leading" secondItem="PmH-6T-WZZ" secondAttribute="leading" constant="10" id="sy2-Ql-k93"/>
+                            <constraint firstItem="PmH-6T-WZZ" firstAttribute="trailing" secondItem="XVo-3d-uEI" secondAttribute="trailing" constant="10" id="uWF-nh-Mdw"/>
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="hq5-3n-saV"/>
                     <connections>
+                        <outlet property="like" destination="020-Lb-Wsr" id="ko4-6a-qxy"/>
                         <outlet property="playerView" destination="Zo6-g5-Ydi" id="DmI-hb-2OS"/>
+                        <outlet property="unlike" destination="sN3-7c-pxZ" id="Dr7-4h-LRc"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="3dv-XG-Fjd" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2627" y="505"/>
+            <point key="canvasLocation" x="2625.700934579439" y="504.75161987041042"/>
         </scene>
         <!--Commuting View Controller-->
         <scene sceneID="ZVp-QX-PTW">
@@ -542,6 +577,9 @@
         </systemColor>
         <systemColor name="systemBrownColor">
             <color red="0.63529411764705879" green="0.51764705882352946" blue="0.36862745098039218" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+        <systemColor name="systemGreenColor">
+            <color red="0.20392156862745098" green="0.7803921568627451" blue="0.34901960784313724" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </systemColor>
         <systemColor name="systemRedColor">
             <color red="1" green="0.23137254901960785" blue="0.18823529411764706" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
