@@ -13,6 +13,7 @@ class CommutingViewController: UIViewController {
     var videoIdOfVideo = ""
     var title1 = ""
     var labelForTitle = ""
+    var category = "" 
     
     @IBOutlet weak var titleOfPage: UILabel!
     @IBOutlet weak var labelOfTitle: UILabel!
@@ -25,12 +26,11 @@ class CommutingViewController: UIViewController {
         super.viewDidLoad()
         self.titleOfPage.text = title1
         self.labelOfTitle.text = labelForTitle
-        // Do any additional setup after loading the view.
     }
     
     @IBAction func video1Pressed(_ sender: Any)
     {
-        let docRef = db.collection("situations").document(title1)
+        let docRef = db.collection(category).document(title1)
 
         docRef.getDocument { (document, error) in
             if let document = document, document.exists {
@@ -41,17 +41,11 @@ class CommutingViewController: UIViewController {
                 print("Document does not exist")
             }
         }
-        
-        
-//        retrieveUrl("video1")
-//        print("pressed 1")
-//        print(" 1 " + self.videoIdOfVideo)
-//        performSegue(withIdentifier: "youtubeIdentifier", sender: self)
     }
     
     @IBAction func video2Pressed(_ sender: Any)
     {
-        let docRef = db.collection("situations").document(title1)
+        let docRef = db.collection(category).document(title1)
 
         docRef.getDocument { (document, error) in
             if let document = document, document.exists {
@@ -62,12 +56,9 @@ class CommutingViewController: UIViewController {
                 print("Document does not exist")
             }
         }
-        
-//        retrieveUrl("video2")
-//        performSegue(withIdentifier: "youtubeIdentifier", sender: self)
-//        print("pressed 2")
     }
     
+    // --------------- helper method to retrieve all the url for the videos ---------------
 //    func retrieveUrl(_ address:String) {
 //        let docRef =  db.collection("situations").document("Busy Day")
 //        sleep(5)

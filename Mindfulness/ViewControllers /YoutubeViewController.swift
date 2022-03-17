@@ -25,6 +25,7 @@ class YoutubeViewController: UIViewController {
         print(userID)
     }
     
+    // liking the video
     @IBAction func likePressed(_ sender: Any) {
         let userID = Auth.auth().currentUser!.uid
         let docRef = db.collection("users").document(userID)
@@ -44,6 +45,8 @@ class YoutubeViewController: UIViewController {
         self.present(dialogMessage, animated: true, completion: nil)
     }
     
+    
+    // unliking the video
     @IBAction func unlikePressed(_ sender: Any) {
         let userID = Auth.auth().currentUser!.uid
         let docRef = db.collection("users").document(userID)

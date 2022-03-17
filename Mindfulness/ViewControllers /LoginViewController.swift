@@ -26,7 +26,6 @@ class LoginViewController: UIViewController {
         // Validate the text fields, make sure all the fields are filled in before logging in
         
         // Signing in the user
-        
         let email = emailTextField.text!.trimmingCharacters(in: .whitespacesAndNewlines)
         let password = passwordTextField.text!.trimmingCharacters(in: .whitespacesAndNewlines)
         
@@ -34,6 +33,7 @@ class LoginViewController: UIViewController {
             
             if error != nil, let error = error as NSError? {
                 
+                // ensure more switch cases to make sure more accurate description
                 if let errorCode = AuthErrorCode(rawValue: error.code) {
                     switch errorCode {
                     case .wrongPassword:
@@ -51,7 +51,6 @@ class LoginViewController: UIViewController {
                 
                 self.view.window?.rootViewController = homeViewController
                 self.view.window?.makeKeyAndVisible()
-                
             }
         }
     }
