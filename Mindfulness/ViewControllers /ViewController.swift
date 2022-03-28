@@ -8,9 +8,11 @@
 import UIKit
 import Firebase
 import iCarousel
+import FirebaseAuth
 
 class ViewController: UIViewController, iCarouselDataSource {
     
+    @IBOutlet weak var nameLabel: UILabel!
     var titleOfPage = ""
     var labelOfTitle = ""
     var categoryChosen = "situations"
@@ -28,6 +30,9 @@ class ViewController: UIViewController, iCarouselDataSource {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        grabUserName(completion: { (name) -> Void in
+            self.nameLabel.text = "Hello There, " + name
+        })
         midView.addSubview(myCarousel)
         myCarousel.dataSource = self
         myCarousel.frame = CGRect(x: 0, y: 35, width: view.frame.size.width, height: 400)
@@ -37,6 +42,21 @@ class ViewController: UIViewController, iCarouselDataSource {
     func numberOfItems(in carousel: iCarousel) -> Int {
        return 2
     }
+    
+    func grabUserName(completion: @escaping(String) -> ()) {
+        var nameOfUser = ""
+        let db = Firestore.firestore()
+        let userID = Auth.auth().currentUser!.uid
+        let docRef = db.collection("users").document(userID)
+        docRef.getDocument { (document, error) in
+            if let document = document, document.exists {
+                nameOfUser = (document.get("name") ?? "nil") as! String
+                completion(nameOfUser)
+            } else {
+                print("Document does not exist")
+            }
+        }
+    } // end of function
     
     func carousel(_ carousel: iCarousel, viewForItemAt index: Int, reusing view: UIView?) -> UIView {
         let view = UIView(frame: CGRect(x: 0, y: 0, width: self.view.frame.size.width/1.4, height: 400))
