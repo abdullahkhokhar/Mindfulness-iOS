@@ -5,7 +5,10 @@ target 'Mindfulness' do
   # Comment the next line if you don't want to use dynamic frameworks
   use_frameworks!
 
-  # Pods for Mindfulness
+# Pods for Mindfulness
 pod 'iCarousel'
+pod 'youtube-ios-player-helper’
+
+
 
 end
