@@ -55,29 +55,29 @@
                                         <rect key="frame" x="0.0" y="668" width="374" height="150"/>
                                         <subviews>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Mindful Selection" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="7O5-f6-5Af">
-                                                <rect key="frame" x="0.0" y="0.0" width="374" height="21"/>
+                                                <rect key="frame" x="0.0" y="0.0" width="374" height="25"/>
                                                 <fontDescription key="fontDescription" name="Avenir-Black" family="Avenir" pointSize="22"/>
                                                 <nil key="textColor"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
                                             <stackView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="xbx-ui-trv">
-                                                <rect key="frame" x="0.0" y="21" width="374" height="129"/>
+                                                <rect key="frame" x="0.0" y="25" width="374" height="125"/>
                                                 <subviews>
                                                     <button opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="200" verticalHuggingPriority="200" horizontalCompressionResistancePriority="1" contentHorizontalAlignment="fill" contentVerticalAlignment="fill" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="IGv-0q-T8W">
-                                                        <rect key="frame" x="0.0" y="0.0" width="124.5" height="129"/>
+                                                        <rect key="frame" x="0.0" y="0.0" width="124.5" height="125"/>
                                                         <rect key="contentStretch" x="0.0" y="1" width="1" height="1"/>
                                                         <color key="tintColor" systemColor="systemBrownColor"/>
                                                         <inset key="titleEdgeInsets" minX="0.0" minY="0.0" maxX="65" maxY="0.0"/>
                                                         <buttonConfiguration key="configuration" style="plain" image="situations2" imagePlacement="top" title="Situations" buttonSize="medium"/>
                                                     </button>
                                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="fill" contentVerticalAlignment="fill" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="7VW-CX-xAH">
-                                                        <rect key="frame" x="124.5" y="0.0" width="125" height="129"/>
+                                                        <rect key="frame" x="124.5" y="0.0" width="125" height="125"/>
                                                         <color key="tintColor" systemColor="systemBrownColor"/>
                                                         <state key="normal" title="Button"/>
                                                         <buttonConfiguration key="configuration" style="plain" image="environment-1" imagePlacement="top" title="Environments"/>
                                                     </button>
                                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="fNX-lg-nhW">
-                                                        <rect key="frame" x="249.5" y="0.0" width="124.5" height="129"/>
+                                                        <rect key="frame" x="249.5" y="0.0" width="124.5" height="125"/>
                                                         <color key="tintColor" systemColor="systemBrownColor"/>
                                                         <state key="normal" title="Button"/>
                                                         <buttonConfiguration key="configuration" style="plain" image="daily=1" imagePlacement="top" title="Daily"/>
@@ -117,7 +117,7 @@
     <resources>
         <image name="bg" width="414" height="896"/>
         <image name="daily=1" width="94" height="92"/>
-        <image name="environment-1" width="94" height="98"/>
+        <image name="environment-1" width="94" height="94"/>
         <image name="situations2" width="94" height="98"/>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>

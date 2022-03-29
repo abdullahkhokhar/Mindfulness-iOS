@@ -45,7 +45,7 @@
 		5BF40C7827BB20F9000354BC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		940CEBE6EC1F063C136726A7 /* Pods_Mindfulness.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Mindfulness.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		B4017F6C27C70E1E0070A71B /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
-		B410CCCB27C6853800A28D8C /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = "GoogleService-Info.plist"; path = "../../../../../../../Downloads/GoogleService-Info.plist"; sourceTree = "<group>"; };
+		B410CCCB27C6853800A28D8C /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		B410CD0A27C6D13600A28D8C /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
 		B4252C7A27DB2FF4005AA449 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Login.storyboard; sourceTree = "<group>"; };
 		B43E129027D06EB6008ACD13 /* YoutubeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = YoutubeViewController.swift; sourceTree = "<group>"; };
@@ -76,13 +76,6 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		5B8094AA27BDA36600418A3F /* Models */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = Models;
-			sourceTree = "<group>";
-		};
 		5BF40C5E27BB20F5000354BC = {
 			isa = PBXGroup;
 			children = (
@@ -108,7 +101,6 @@
 				B410CCCB27C6853800A28D8C /* GoogleService-Info.plist */,
 				5BF40C6A27BB20F5000354BC /* AppDelegate.swift */,
 				5BF40C6C27BB20F5000354BC /* SceneDelegate.swift */,
-				5B8094AA27BDA36600418A3F /* Models */,
 				5BF40C7E27BB2A5B000354BC /* Views */,
 				5BF40C7327BB20F9000354BC /* Assets.xcassets */,
 				5BF40C7527BB20F9000354BC /* LaunchScreen.storyboard */,
